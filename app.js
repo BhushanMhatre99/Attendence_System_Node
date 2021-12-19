@@ -31,10 +31,10 @@ app.get('/add_student', (req,res) =>{
     res.render('add_student.ejs')
 })
 
-app.get('/index', (req, res) => {
+app.get('/view_teacher', (req, res) => {
   db.collection('user').find().toArray((err, result) => {
     if (err) return console.log(err)
-    res.render('index.ejs', {user: result})
+    res.render('view_teacher.ejs', {user: result})
   })
 
 })
