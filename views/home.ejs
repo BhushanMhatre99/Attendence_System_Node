@@ -15,33 +15,46 @@
     <div class="col-2">
       <nav id="sidebarMenu" class="sidebar">
         <div class="sidebar-sticky pt-3">
-          <p class="d-flex justify-content-center align-items-center">
-            <a href="/index">
-              <img src="img/logo-white.svg" alt="home">
-            </a>
-          </p>
-          <ul class="nav nav-pills flex-column mx-4">
-            <li class="nav-item mb-2">
-              <a class="nav-link active" href="#">
-                <img src="img/sidebar/home.svg" class="mr-3 icon-sidebar" alt=""> Home <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item mb-2">
-              <a class="nav-link" href="#">
-                <img src="img/sidebar/check-circle.svg" class="mr-3 icon-sidebar" alt=""> Goal
-              </a>
-            </li>
-            <li class="nav-item mb-2">
-              <a class="nav-link" href="#">
-                <img src="img/sidebar/clipboard.svg" class="mr-3 icon-sidebar" alt=""> To Do
-              </a>
-            </li>
-            <li class="nav-item mb-2">
-              <a class="nav-link" href="#">
-                <img src="img/sidebar/calendar.svg" class="mr-3 icon-sidebar" alt=""> Kalender
-              </a>
-            </li>
-          </ul>
+            <p class="d-flex justify-content-center align-items-center">
+                <a href="#">
+
+                </a>
+            </p>
+
+            <img class="img-fluid rounded-circle mx-auto" style="margin-top:50px;" src="logo.png"  /></span>
+
+            <ul class="nav nav-pills flex-column mx-4">
+                <li class="nav-item mt-5 mb-2">
+                    <a class="nav-link active" href="#">
+
+                    Add Teacher <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#">
+
+Add Student
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#">
+
+                    View Teacher
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#">
+                    View Student
+
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#">
+                    Logout
+
+                    </a>
+                </li>
+            </ul>
         </div>
       </nav>
     </div>
@@ -82,7 +95,7 @@
                 <div class="form-group row mb-3">
                     <label class="form-label col-sm-2" for="mobile">Mobile</label>
                     <div class="col-sm-7">
-                    <input class="form-control" type="text" id="mobile" name="mobile" required>
+                    <input class="form-control" type="number" id="mobile" name="mobile" required>
                     </div>
                     <div class="valid-feedback">
                         Looks good!
@@ -91,7 +104,7 @@
                 <div class="form-group row mb-3">
                     <label class="form-label col-sm-2" for="dob">Dob</label>
                     <div class="col-sm-7">
-                    <input class="form-control" type="text" id="dob" name="dob" required>
+                    <input class="form-control" type="date" id="dob" name="dob" required>
                     </div>
                     <div class="valid-feedback">
                         Looks good!
@@ -100,7 +113,11 @@
                <div class="form-group row mb-3">
                     <label class="form-label col-sm-2" for="gender">Gender</label>
                     <div class="col-sm-7">
-                    <input class="form-control" type="text" id="gender" name="gender" required>
+                    <select class="form-control" name="gender">
+                                <option disabled="true" selected>--  Select Option  --</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
                     </div>
                     <div class="valid-feedback">
                         Looks good!
@@ -109,7 +126,7 @@
                 <div class="form-group row mb-3">
                     <label class="form-label col-sm-2" for="email">Email</label>
                     <div class="col-sm-7">
-                    <input class="form-control" type="text" id="email" name="email" required>
+                    <input class="form-control" type="email" id="email" name="email" required>
                     </div>
                     <div class="valid-feedback">
                         Looks good!
